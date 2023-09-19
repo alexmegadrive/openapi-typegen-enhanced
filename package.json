@@ -4,7 +4,7 @@
   "description": "",
   "main": "prepareTestApi.js",
   "scripts": {
-    "typegen": "node ./getTestApi.js && npx openapi --input ./src/models/TestApi/testApi.json --output ./src/models/TestApi/ --exportServices false --exportCore false"
+    "typegen": "node ./getTestApi.js && npx openapi --input ./src/models/TestApi/testApi.json --output ./src/models/TestApi/ "
   },
   "author": "Alexander Mihailov",
   "license": "ISC",
