@@ -18,6 +18,7 @@
 `npm i`
 
 Конфигурация расположена в файле getTestApi.js
+В конфигурации замените url на путь к JSON-у от Swagger-а, замените folderPath на путь к папке, по которой будут лежать ваши модели.
 
 ```
 const url = "https://petstore.swagger.io/v2/swagger.json";
@@ -25,7 +26,7 @@ const folderPath = "src/models/TestApi/";
 const swaggerFilePath = folderPath + "testApi.json";
 ```
 
-В конфигурации замените url на путь к JSON-у от Swagger-а, замените folderPath на путь к папке, по которой будут лежать ваши модели, также замените пути до скрипта и до папки в package.json/, и измените само название файла.
+ Также замените пути до скрипта и до папки в package.json/, и измените само название файла запуска скрипта.
 
 ```
 "scripts": {
