@@ -1,0 +1,15 @@
+{
+  "name": "typegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prepareTestApi.js",
+  "scripts": {
+    "typegen": "node ./getTestApi.js && npx openapi --input ./src/models/TestApi/testApi.json --output ./src/models/TestApi/ --exportServices false --exportCore false"
+  },
+  "author": "Alexander Mihailov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "openapi-typescript-codegen": "^0.25.0"
+  }
+}
