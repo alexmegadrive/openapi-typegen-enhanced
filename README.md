@@ -40,4 +40,4 @@ const swaggerFilePath = folderPath + "testApi.json";
 `yarn typegen`
 
 При запуске удалится папка с моделями (при наличии), далее библиотека создает папку src/models , в которой, в зависимости от вашей конфигурации, будут сами модели, API для них, и core файлы. В конфигурации текущего скрипта оставлена только генерация моделей.
-Ознакомьтесь с конфигурацией здесь https://www.npmjs.com/package/openapi-typescript-codegen.
+Ознакомьтесь с конфигурацией здесь https://github.com/ferdikoomen/openapi-typescript-codegen.
