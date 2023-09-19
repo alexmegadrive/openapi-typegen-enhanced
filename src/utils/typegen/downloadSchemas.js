@@ -14,15 +14,14 @@ async function downloadSchemas(url, swaggerFilePath) {
       const dataWithRequiredKeys = addRequiredKeys(response.data);
       const stringifiedData = JSON.stringify(dataWithRequiredKeys);
       const modifiedData = getModifiedData(stringifiedData);
-
       const swaggerFileDir = path.dirname(swaggerFilePath);
-      // Создание директории, если она не существует
+      
+      // Создание директории, если её не существует
       if (!fs.existsSync(swaggerFileDir)) {
         fs.mkdirSync(swaggerFileDir, { recursive: true });
       }
-
+      
       fs.writeFileSync(swaggerFilePath, modifiedData);
-
       console.log("Файл Swagger успешно загружен.");
     } else {
       console.error("Не получилось скачать файл:", response.status);
